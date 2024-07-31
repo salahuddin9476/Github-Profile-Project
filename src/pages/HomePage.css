@@ -1,0 +1,97 @@
+.home-page {
+  background: linear-gradient(135deg, #41b4e2, #2d69ad);
+  text-align: center;
+  padding: 40px 20px;
+  height: 100vh;
+}
+.main-heading{color: white;
+font-size: 3rem;
+
+}
+
+.search-container {
+  margin-bottom: 20px;
+}
+
+.search-container input[type="text"] {
+  width: 60%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.search-container input[type="text"]:focus {
+  border-color: #025bb5;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid rgb(29, 170, 235);
+  border-radius: 5px;
+  background-color: #2087cc;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+.search-container button:hover {
+  background-color: #025bb5;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (max-width: 1200px) {
+  .search-container input[type="text"] {
+    width: 70%;
+  }
+}
+
+@media (max-width: 992px) {
+  .search-container input[type="text"] {
+    width: 80%;
+  }
+
+  .search-container button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-container input[type="text"] {
+    width: 85%;
+  }
+
+  .search-container button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .search-container input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .search-container button {
+    padding: 10px 15px;
+    font-size: 14px;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .cards-container {
+    gap: 10px;
+  }
+}
